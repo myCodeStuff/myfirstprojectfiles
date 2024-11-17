@@ -1,0 +1,896 @@
+
+import time
+
+# Sign & log in account Functions.
+
+
+def str_find_(temp_var1, temp_var2, temp_var3, temp_var4, temp_var5):
+    for temp_var2 in temp_var1:
+        temp_var3 = temp_var4.find(temp_var2)
+
+        if temp_var3 >= 0:
+            int(temp_var5)
+            temp_var5 = 0
+            return temp_var5
+        elif temp_var3 <= -1:
+            pass
+
+
+def str_find_for1usage(temp_var1, temp_var2, temp_var3, temp_var4, temp_var5):
+    try:
+        list(temp_var2)
+        temp_var2 = temp_var4
+        temp_var3 = temp_var2.index(temp_var1)
+        if temp_var3 >= 0:
+            return temp_var3
+    except ValueError:
+        temp_var5 = None
+        return temp_var5
+
+
+def str_find_2mvr(temp_var1, temp_var2, temp_var3, temp_var4, temp_var5, temp_var6, temp_var7):
+    for temp_var2 in temp_var1:
+        temp_var3 = temp_var4.find(temp_var2)
+        int(temp_var5)
+        int(temp_var6)
+        if temp_var3 <= -1:
+            temp_var5 += 1
+        elif temp_var3 >= 0:
+            temp_var6 += 1
+
+    if temp_var6 >= 5:
+        if temp_var5 > temp_var6:
+            temp_var7 = 'int count > char -> Not valid'
+        elif temp_var6 >= temp_var5:
+            temp_var7 = 'char count > int -> valid'
+        return temp_var7
+    else:
+        pass
+
+
+def find_(temp_var1, temp_var2, temp_var3, temp_var4, temp_var5):
+    for temp_var2 in temp_var1:
+        temp_var3 = temp_var4.find(temp_var2)
+        if temp_var3 >= 0:
+            temp_var4 = temp_var1
+        elif temp_var3 <= -1:
+            pass
+    if temp_var4 == temp_var1:
+        for temp_var4 in temp_var4:
+            temp_var3 = temp_var1.find(temp_var4)
+            print(temp_var3)
+        if temp_var3 >= 0 and temp_var4 == '@':
+            pass
+        elif temp_var3 <= -1:
+            pass
+        return temp_var3
+
+
+def str_ff_3_mail(temp_var1, temp_var2, temp_var3, temp_var4, temp_var5):
+    list(temp_var3)
+    for temp_var2 in temp_var1:
+        temp_var3 += temp_var2
+
+    for temp_var5 in range(0, len(temp_var1)):
+        try:
+            temp_var4 = temp_var3.pop()
+            if temp_var4 == '@':
+                return temp_var3
+        except IndexError:
+            return temp_var3
+
+
+def str_ff_2_mail(temp_var1, temp_var2, temp_var3, temp_var4, temp_var5, temp_var6, temp_var7):
+    for temp_var2 in temp_var1[temp_var4:]:
+        temp_var3 = temp_var5.find(temp_var2)
+        int(temp_var6)
+        if temp_var3 >= 0:
+            temp_var6 += 1
+        elif temp_var3 <= -1:
+            pass
+
+    if temp_var6 == 10:
+        temp_var7 = 'Complete'
+    elif temp_var6 < 10:
+        temp_var7 = 'Not Complete'
+    return temp_var7
+
+
+def webpage_menu():
+    print("Welcome to our web page")
+    print("Select an option:")
+    print("1. register\n2. Log in\n3. Exit")
+
+
+def autofill_option(temp_var1):
+    if temp_var1 == 'r':
+        print("Did you mean 'Register'? ")
+    elif temp_var1 == 'l':
+        print("Did you mean 'Log in'?")
+
+
+def denied_notes_register_opt():
+    print("Note: The amount of chars is less than the number of integers..")
+    print("(username need to have a least 5 character and no less than the amount of integers)")
+
+# ATM functions.
+
+
+def feedback_option_forbac(feedop1, comment1):
+    if feedop1.lower() == 'system errors':
+        print(" ")
+        print("Thanks for your report!, We are going to look up what's bothering you!")
+        pass
+    elif feedop1.lower() == 'problems with any process':
+        print(" ")
+        print("Thanks for your report!, We are going to look up what's bothering you!")
+        pass
+    elif feedop1.lower() == 'others':
+        print("")
+        print("Would you like to describe more of what's happening..")
+        print("")
+        comment1 = input(': ')
+        print(" ")
+        print("Awesome! taking this will be helpful for ous! ")
+        print(" ")
+        return comment1
+
+
+def save_money_forbac(adds, total2):
+    total2 += int(adds)
+    return total2
+
+
+def cash_function_forbac(taking_out2, total_balance22):
+    total_balance22 -= int(taking_out2)
+    return total_balance22
+
+
+def principal_menu_options_forbac():
+    print(" ")
+    print("Bank North Carolina" + " - Account Status: Online")
+    print("Welcome select a option:")
+    print("1. Save money")
+    print("2. Cash ")
+    print("3. Feedback")
+    print("4. Exit")
+
+
+def feedback_menu_options_forbac():
+    print("Great! We would like to hear your comments, What type of feedback would you like to tell us!")
+    print("1. System Errors.")
+    print("2. Problems with any process.")
+    print("3. Others")
+
+
+def save_money_denied_showup_forbac():
+    print("")
+    print("You got the top of intents for this 24hrs")
+    print("try again after 24hrs")
+    print("")
+
+
+def cash_option_validation_forbac(taking_out3, warning1):
+    if 0 < taking_out3 < 999:
+        print("Good!..")
+        warning1 = True
+        return warning1
+    elif 0 > taking_out3 >= 1000:
+        print("Denied! No more than 3 digits balance!")
+        warning1 = False
+        return warning1
+
+
+def main_numeric_val_forbac(temp_var1, temp_var2, temp_var3, temp_var4):
+    for temp_var2 in temp_var1:
+        temp_var3 = numbers.find(temp_var2)
+
+        if temp_var3 >= 0:
+            int(temp_var4)
+            temp_var4 += 0
+            return temp_var4
+        elif temp_var3 <= -1:
+            pass
+
+
+def output_adds_forbac(adds1):
+    print("Recent add: " + str(adds1))
+    return adds1
+
+
+class ACCOUNT:
+    def __init__(self, balance, deposit, depo_actions, wrn_counter):
+        self.balance = balance
+        self.deposit = deposit
+        self.depo_actions = depo_actions
+        self.wrn_counter = wrn_counter
+
+
+# 1.0 ATM declared variables
+# receipt section.
+file_path = "C:/Users/Usuario/Desktop/receipt.txt"
+txt_data = "             --- Bank North Caroline Automatic Receipt --- \n\n\n --> Last add:"
+txt_dataline2 = "\n --> Actual Balance: "
+txt_dataline3 = "\n --> Thanks for using our services - feedback for comments.."
+txt_dataline4 = "\n --> End info.. <--"
+receipt_data_forBAC = ''
+trash_data_forBAC = ''
+comment_forBAC = ''
+# for str_find local variables.
+shut_fly_forBAC = 0
+index_forBAC = 0
+var2_forBAC = ''
+flying_var_forBAC = 0
+toggle_shut_forBAC = 0
+# toggles or validating
+save_m_toggle_forBAC = 0
+alt_response2_forBAC = 0
+intents3_forBAC = 0
+alt_response_forBAC = 0
+validation_response2_forBAC = 0
+warning_forBAC = 0
+intents_forBAC = 0
+intents2_forBAC = 0
+validation_response_forBAC = 0
+taking_out222_forBAC = 0
+total_balance2_forBAC = 0
+total_forBAC = 0
+money_adds_forBAC = 0
+actions_forBAC = 0
+# finders
+numbers = '1234567890'
+# main bool running
+running_forBAC = True
+# receipt func
+receiptData_forBAC = [str(receipt_data_forBAC), str(total_balance2_forBAC)]
+
+# 2.0 Sign & log in account declared variables section
+# temp_variables
+main_temp_var1 = ''
+# finders.
+symbol = "°|!$&/()=?¡¿'¨´+}{-, "
+alphabet = 'abcdefghijklmnñopqrstuvwxyz'
+gmail = '@gmail.com'
+arroba = '@'
+# for str_find local variables.
+index = 0
+shut_fly = 0
+shut_fly2 = 0
+toggle = 0
+indexing_var = ''
+indexing_var2 = 0
+index2 = 0
+message = ''
+# 2.1 account saved blocks
+# position 0 from the saved accounts dictionary belongs to same position in the saved password dict.
+# Note: Now the the proyect has specific space of 10. for accounts registration (reference for them: temp(number)).
+# Dictionaries signed up accounts (and passwords)
+dict1_for_saved_account = {'saved_accounts': []}
+dict1_for_saved_password = {'saved_passwords': []}
+# iterables versions of them.
+mylist_for_mailaccount = dict1_for_saved_account['saved_accounts']
+mylist_for_passwrd_mailaccount = dict1_for_saved_password['saved_passwords']
+temp1 = 0
+temp2 = 0
+temp3 = 0
+temp4 = 0
+temp5 = 0
+temp6 = 0
+temp7 = 0
+temp8 = 0
+temp9 = 0
+temp0 = 0
+mylist_acc_info = [temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8, temp9, temp0]
+validation_info = []
+# references
+notification1 = 'r'
+notification2 = 'l'
+# varaibles for validation
+validation1 = 0
+attemps = 0
+sign_val = 0
+val = 0
+b_actions_acc = 0
+acc_acc = 0
+passwrd_val1 = 0
+passwrd_val2 = ''
+passw_regis_resp = ''
+gmail_str_val = ''
+bank_actions = ''
+fly = ''
+validation_var_forsaved_account = 0
+# declared response variables
+log_resp2 = ''
+regis_resp = ''
+message2 = ''
+log_resp = ''
+# restarted variables
+shadow_temp_list = []
+shadow_temp_list2 = []
+temp_list = []
+# 2.1 scanner section
+running = True
+pass_var = False
+pass_val2 = False
+
+while running:
+    try:
+        if validation_var_forsaved_account == 1:
+            validation_var_forsaved_account = 0
+            sign_val = find_(regis_resp, indexing_var, index, arroba, indexing_var2)
+            if sign_val is None:
+                regis_resp += '@'
+                sign_val = find_(regis_resp, indexing_var, index, arroba, indexing_var2)
+                pass_var = True
+            elif sign_val >= 0:
+                pass_var = True
+        elif validation_var_forsaved_account != 1:
+            pass
+
+    finally:
+        if pass_var:
+            sign_val -= 2
+            gmail_str_val = str_ff_2_mail(regis_resp, indexing_var, index, sign_val, gmail, shut_fly, message)
+            if gmail_str_val == 'Not Complete':
+                list_val = str_ff_3_mail(regis_resp, shadow_temp_list, temp_list, indexing_var, val)
+                val_string2 = ''.join(map(str, list_val))
+                val_string2 += gmail
+                regis_resp = val_string2
+                pass
+            elif gmail_str_val == 'Complete':
+                pass
+            registration_val = str_find_for1usage(regis_resp, indexing_var, index, mylist_for_mailaccount,
+                                                  shut_fly)
+            if registration_val is None:
+                b_actions_acc += 1
+                pass_val2 = True
+                pass
+            elif registration_val >= 0 and not pass_val2:
+                if mylist_for_mailaccount[registration_val] == regis_resp:
+                    print("This account already exist!")
+                    time.sleep(0.5)
+                    print("Try make another one..")
+                    time.sleep(0.5)
+                    pass_val2 = False
+                    pass
+
+            if pass_val2:
+                dict1_for_saved_account['saved_accounts'].append(regis_resp)
+                mylist_for_mailaccount = dict1_for_saved_account['saved_accounts']
+                dict1_for_saved_password['saved_passwords'].append(passw_regis_resp)
+                mylist_for_passwrd_mailaccount = dict1_for_saved_password['saved_passwords']
+                print("Account Succesfully saved!")
+                time.sleep(1)
+            elif not pass_val2:
+                pass
+        elif not pass_var:
+            pass
+
+    list_val = []
+    shadow_temp_list = []
+    temp_list = []
+    pass_var = False
+    pass_val2 = False
+    actions_forBAC = 0
+
+    match b_actions_acc or acc_acc:
+        case b_actions_acc if b_actions_acc == 0:
+            pass
+        case b_actions_acc if b_actions_acc == 1:
+            if acc_acc == 1:
+                if (mylist_acc_info[0].deposit or mylist_acc_info[0].balance or mylist_acc_info[0].depo_actions or
+                        mylist_acc_info[0].wrn_counter > 0):
+                    pass
+                else:
+                    pass
+            elif acc_acc < 1:
+                mylist_acc_info[0] = ACCOUNT(0, 0, 0, 0)
+                print(mylist_acc_info[0])
+                acc_acc += 1
+        case b_actions_acc if b_actions_acc == 2:
+            if acc_acc == 2:
+                if (mylist_acc_info[1].deposit or mylist_acc_info[1].balance or mylist_acc_info[1].depo_actions or
+                        mylist_acc_info[1].wrn_counter > 0):
+                    pass
+            elif acc_acc < 2:
+                mylist_acc_info[1] = ACCOUNT(0, 0, 0, 0)
+                acc_acc += 1
+        case b_actions_acc if b_actions_acc == 3:
+            if acc_acc == 2:
+                if (mylist_acc_info[1].deposit or mylist_acc_info[1].balance or mylist_acc_info[1].depo_actions or
+                        mylist_acc_info[1].wrn_counter > 0):
+                    pass
+            elif acc_acc < 2:
+                mylist_acc_info[1] = ACCOUNT(0, 0, 0, 0)
+                acc_acc += 1
+        case b_actions_acc if b_actions_acc == 4:
+            if acc_acc == 2:
+                if (mylist_acc_info[1].deposit or mylist_acc_info[1].balance or mylist_acc_info[1].depo_actions or
+                        mylist_acc_info[1].wrn_counter > 0):
+                    pass
+            elif acc_acc < 2:
+                mylist_acc_info[1] = ACCOUNT(0, 0, 0, 0)
+                acc_acc += 1
+        case b_actions_acc if b_actions_acc == 5:
+            if acc_acc == 2:
+                if (mylist_acc_info[1].deposit or mylist_acc_info[1].balance or mylist_acc_info[1].depo_actions or
+                        mylist_acc_info[1].wrn_counter > 0):
+                    pass
+            elif acc_acc < 2:
+                mylist_acc_info[1] = ACCOUNT(0, 0, 0, 0)
+                acc_acc += 1
+        case b_actions_acc if b_actions_acc == 6:
+            if acc_acc == 2:
+                if (mylist_acc_info[1].deposit or mylist_acc_info[1].balance or mylist_acc_info[1].depo_actions or
+                        mylist_acc_info[1].wrn_counter > 0):
+                    pass
+            elif acc_acc < 2:
+                mylist_acc_info[1] = ACCOUNT(0, 0, 0, 0)
+                acc_acc += 1
+        case b_actions_acc if b_actions_acc == 7:
+            if acc_acc == 2:
+                if (mylist_acc_info[1].deposit or mylist_acc_info[1].balance or mylist_acc_info[1].depo_actions or
+                        mylist_acc_info[1].wrn_counter > 0):
+                    pass
+            elif acc_acc < 2:
+                mylist_acc_info[1] = ACCOUNT(0, 0, 0, 0)
+                acc_acc += 1
+        case b_actions_acc if b_actions_acc == 8:
+            if acc_acc == 2:
+                if (mylist_acc_info[1].deposit or mylist_acc_info[1].balance or mylist_acc_info[1].depo_actions or
+                        mylist_acc_info[1].wrn_counter > 0):
+                    pass
+            elif acc_acc < 2:
+                mylist_acc_info[1] = ACCOUNT(0, 0, 0, 0)
+                acc_acc += 1
+        case b_actions_acc if b_actions_acc == 9:
+            if acc_acc == 2:
+                if (mylist_acc_info[1].deposit or mylist_acc_info[1].balance or mylist_acc_info[1].depo_actions or
+                        mylist_acc_info[1].wrn_counter > 0):
+                    pass
+            elif acc_acc < 2:
+                mylist_acc_info[1] = ACCOUNT(0, 0, 0, 0)
+                acc_acc += 1
+        case b_actions_acc if b_actions_acc == 10:
+            if acc_acc == 2:
+                if (mylist_acc_info[1].deposit or mylist_acc_info[1].balance or mylist_acc_info[1].depo_actions or
+                        mylist_acc_info[1].wrn_counter > 0):
+                    pass
+            elif acc_acc < 2:
+                mylist_acc_info[1] = ACCOUNT(0, 0, 0, 0)
+
+    print("\nSaved accounts:" + str(dict1_for_saved_account['saved_accounts'[0:]]))
+    webpage_menu()
+    main_response = input(': ')
+
+# numeric validation.
+
+    toggle = str_find_(main_response, indexing_var, index, numbers, shut_fly)
+
+    if toggle is None:
+        toggle = 'Toggle = Valid'
+    elif toggle >= 0:
+        print("\nNot recognized! , Try writing your action as it's show up on the menu")
+        time.sleep(1)
+        continue
+
+# autofill option.
+
+    match main_response:
+        case main_response if main_response[0:].lower() == 'register':
+            pass
+        case main_response if main_response[0:].lower() == 'log in':
+            pass
+        case main_response if main_response[0:4].lower() == 'regi' or main_response[4:] == 'ster':
+            autofill_option(notification1)
+            autofill_response1 = input(': ')
+            if autofill_response1 == 'yes':
+                pass
+            elif autofill_response1 == 'no':
+                continue
+            else:
+                pass
+            autofill_response1 = 'register'
+            main_response = autofill_response1
+        case main_response if main_response[0:2].lower() == 'lo' or main_response[3:] == ' in':
+            autofill_option(notification2)
+            autofill_response1 = input(': ')
+            if autofill_response1 == 'yes':
+                pass
+            elif autofill_response1 == 'no':
+                continue
+            else:
+                pass
+            autofill_response1 = 'log in'
+            main_response = autofill_response1
+
+#   registration
+    match main_response:
+        case main_response if main_response.lower() == 'register':
+            print("\nSign in")
+            print("Good! fill the boxes down below to create your new account\n(Note: symbols or spaces not allowed)\n")
+            attemps = 0
+            account_regis_val = True
+            while account_regis_val:
+                if attemps == 2 or attemps == 1:
+                    print("(Note: symbols or spaces not allowed..)")
+                    time.sleep(1)
+                    pass
+                elif attemps == 3:
+                    regis_resp = ''
+                    passw_regis_resp = ''
+                    print("Too much intents for this option..")
+                    time.sleep(1)
+                    account_regis_val = False
+                    continue
+
+                try:
+                    if not account_regis_val:
+                        continue
+                    else:
+                        regis_resp = input("Username: ")
+                        passw_regis_resp = input("Password: ")
+                finally:
+                    regis_val1 = str_find_(regis_resp, indexing_var, index, symbol, shut_fly)
+                    regis_val2 = str_find_2mvr(regis_resp, indexing_var, index, alphabet, shut_fly, shut_fly2, message)
+                    passwrd_val1 = str_find_(passw_regis_resp, indexing_var, index, symbol, shut_fly)
+                    passwrd_val2 = str_find_2mvr(passw_regis_resp, indexing_var, index, alphabet, shut_fly, shut_fly2,
+                                                 message)
+
+                    if regis_val2 is None or regis_val2 == 'int count > char -> Not valid':
+                        attemps += 1
+                        denied_notes_register_opt()
+                        time.sleep(0.5)
+                        continue
+
+                    elif regis_val1 is None and regis_val2 == 'char count > int -> valid':
+                        if passwrd_val1 is None and passwrd_val2 == 'char count > int -> valid':
+                            pass
+                        else:
+                            attemps += 1
+                            continue
+                        validation_var_forsaved_account += 1
+
+                        print(mylist_acc_info)
+                        print("loading..")
+                        time.sleep(1)
+                        account_regis_val = False
+                        continue
+
+                    elif regis_val1 >= 0:
+                        attemps += 1
+                        continue
+
+        case main_response if main_response.lower() == 'log in':
+            attemps = 0
+            try:
+                if mylist_for_mailaccount[0] is type(str):
+                    print("it's loop")
+                    pass
+            except IndexError:
+                print("Create an account")
+                continue
+
+            try:
+                login_account_val = True
+                while login_account_val:
+                    if attemps == 2 or attemps == 1:
+                        print("(Note: symbols or spaces not allowed..)")
+                        time.sleep(1)
+                        pass
+                    elif attemps == 3:
+                        regis_resp = ''
+                        passw_regis_resp = ''
+                        print("Too much intents for this option..")
+                        time.sleep(1)
+                        login_account_val = False
+                        continue
+
+                    try:
+                        if not login_account_val:
+                            continue
+                        else:
+                            print("\nLog in")
+                            print("Enter your account ")
+                            log_resp = input(': ')
+                            print("Enter your password ")
+                            log_resp2 = input(': ')
+
+                    finally:
+                        login_val1 = str_find_(log_resp, indexing_var, index, symbol, shut_fly)
+                        login_val2 = str_find_2mvr(log_resp, indexing_var, index, alphabet, shut_fly, shut_fly2,
+                                                   message)
+
+                        if login_val2 is None or login_val2 == 'int count > char -> Not valid':
+                            attemps += 1
+                            print("Account not found..")
+                            continue
+
+                        elif login_val1 is None and login_val2 == 'char count > int -> valid':
+                            val = str_find_for1usage(log_resp, indexing_var, index, mylist_for_mailaccount, shut_fly)
+                            print(val)
+                            if val is None:
+                                attemps += 1
+                                continue
+                            elif val >= 0:
+                                pass
+
+                            position_val1 = str_find_for1usage(log_resp2, indexing_var, index,
+                                                               mylist_for_passwrd_mailaccount, shut_fly)
+
+                            if val != position_val1:
+                                attemps += 1
+                                continue
+                            elif val == position_val1:
+                                bank_actions = "Account Found.."
+                                regis_resp = ''
+                                passw_regis_resp = ''
+                                time.sleep(1)
+                                print(bank_actions)
+                                print(mylist_acc_info)
+                                print("loading..")
+                                time.sleep(1)
+                                login_account_val = False
+
+                        elif login_val1 >= 0:
+                            attemps += 1
+                            continue
+
+            finally:
+                if bank_actions == "Account Found..":
+                    total_balance2_forBAC = 0
+                    running_forBAC = True
+                    while running_forBAC:
+                        principal_menu_options_forbac()
+                        print(log_resp)
+                        option1_forBAC = input(" -> ")
+                        time.sleep(0.5)
+
+                        numeric_func_sign_forBAC = main_numeric_val_forbac(option1_forBAC, var2_forBAC, var2_forBAC,
+                                                                           index_forBAC)
+
+                        if numeric_func_sign_forBAC is None:
+                            numeric_func_sign_forBAC = 'None -> pass'
+                        elif numeric_func_sign_forBAC == 0:
+                            print("\nNot recognized!, try typing your selection as It's show up in the menu.")
+                            time.sleep(1)
+                            continue
+
+                    # autofill_option.
+
+                        if option1_forBAC[0:2].lower() == 'ca' and option1_forBAC[2:4].lower() == 'sh':
+                            pass
+                        elif option1_forBAC[0:2].lower() == 'ca' or option1_forBAC[2:4].lower() == 'sh':
+                            print("Did you mean 'Cash' ? ")
+                            autofill_op_val2_forBAC = input("Write 'yes' or press any key\n\t")
+                            if autofill_op_val2_forBAC == 'no':
+                                print("loading..")
+                                time.sleep(1)
+                                continue
+                            elif autofill_op_val2_forBAC == 'yes':
+                                pass
+                            else:
+                                pass
+                            auto_fill2_forBAC = 'cash'
+                            option1_forBAC = auto_fill2_forBAC
+                            pass
+
+                        if option1_forBAC[0:4].lower() == 'save' and option1_forBAC[4:10].lower() == ' money':
+                            pass
+                        elif option1_forBAC[0:4].lower() == 'save':
+                            print("Did you mean 'save money' ? ")
+                            autofill_op_val_forBAC = input("Write 'yes' or press any key\n\t")
+                            if autofill_op_val_forBAC == 'no':
+                                print("loading..")
+                                time.sleep(1)
+                                continue
+                            elif autofill_op_val_forBAC == 'yes':
+                                pass
+                            else:
+                                pass
+                            auto_fill1_forBAC = 'save money'
+                            option1_forBAC = auto_fill1_forBAC
+                            pass
+
+                        if option1_forBAC[0:4].lower() == 'feed' and option1_forBAC[4:9].lower() == 'back':
+                            pass
+                        elif option1_forBAC[0:3].lower() == 'fee' or option1_forBAC[4:9].lower() == 'back':
+                            print("Did you mean 'feedback' ? ")
+                            autofill_op_val_forBAC = input("Write 'yes' or press any key\n\t")
+                            if autofill_op_val_forBAC == 'no':
+                                print("loading..")
+                                time.sleep(1)
+                                continue
+                            elif autofill_op_val_forBAC == 'yes':
+                                pass
+                            else:
+                                pass
+                            auto_fill1_forBAC = 'feedback'
+                            option1_forBAC = auto_fill1_forBAC
+                            pass
+
+                    # 1.0 save money option
+
+                        if option1_forBAC.lower() == 'save money' and mylist_acc_info[val].depo_actions > 3:
+                            print("You make 3 deposits on the last 24h, try again after 24h..")
+                            time.sleep(0.5)
+                            continue
+
+                        elif option1_forBAC.lower() == 'save money' and mylist_acc_info[val].depo_actions <= 3:
+                            time.sleep(1)
+                            mylist_acc_info[val].depo_actions += 1
+                            print("Actions today: " + str(mylist_acc_info[val].depo_actions)
+                                  + " - Limit per day: 3")
+
+                            save_money_func_running_forBAC = True
+                            while save_money_func_running_forBAC:
+                                if intents3_forBAC == 3:
+                                    print("Too much warnings..")
+                                    intents3_forBAC = 0
+                                    time.sleep(1)
+                                    save_money_func_running_forBAC = False
+                                    continue
+
+                                try:
+                                    if not save_money_func_running_forBAC:
+                                        pass
+                                    else:
+                                        alt_response2_forBAC = int(input(' -> '))
+                                except ValueError:
+                                    intents3_forBAC += 1
+                                    print("Enter a number balance!..")
+                                    continue
+                                finally:
+                                    if 0 < alt_response2_forBAC < 10000:
+                                        save_money_func_running_forBAC = False
+                                    elif 0 >= alt_response2_forBAC >= 10000:
+                                        alt_response2_forBAC = 0
+                                        continue
+
+                            money_adds_forBAC = alt_response2_forBAC
+                            receipt_data_forBAC = output_adds_forbac(money_adds_forBAC)
+                            total_balance_forBAC = save_money_forbac(money_adds_forBAC, total_forBAC)
+                            mylist_acc_info[val].balance += total_balance_forBAC
+                            print("Actual account balance: " + str(mylist_acc_info[val].balance))
+
+                        # 2.0 cash option
+
+                        elif option1_forBAC.lower() == 'cash' and mylist_acc_info[val].wrn_counter == 4:
+                            print("Too much warnings! - loging out..")
+                            time.sleep(1)
+                            print("\nPrinting Account status receipt..")
+                            time.sleep(1.5)
+
+                            with open(file_path, "w") as file:
+                                file.write(txt_data)
+                                file.write(str(receipt_data_forBAC))
+                                file.write(txt_dataline2)
+                                file.write(str(total_balance2_forBAC))
+                                file.write(txt_dataline3)
+                                file.write(txt_dataline4)
+                                print(f"Your receipt can be found in'{file_path}'")
+
+                            mylist_acc_info[val].balance += total_balance2_forBAC
+                            mylist_acc_info[val].deposit = money_adds_forBAC
+
+                            time.sleep(0.5)
+                            print(" ")
+                            print("Account Status: Offline")
+                            print("Thanks for using our services!")
+
+                            running_forBAC = False
+
+                        elif option1_forBAC.lower() == 'cash' and mylist_acc_info[val].wrn_counter < 4:
+                            if mylist_acc_info[val].balance == 0:
+                                print(" ")
+                                print(" You can't take out anything with a balance of: 0.00$ ")
+                                continue
+                            elif mylist_acc_info[val].balance <= 99:
+                                print(" ")
+                                print("Isn't posible to take out balance with balance minor of: 99.9$")
+                                continue
+                            elif mylist_acc_info[val].balance >= 100:
+                                time.sleep(1)
+                                print(" ")
+                                print("Enter balance(Warning! - Is not posible taking out more than 3 digits balance):")
+
+                                # 2.1 Cash validation
+
+                                cash_func_running_forBAC = True
+                                while cash_func_running_forBAC:
+                                    if intents2_forBAC == 3:
+                                        print("Too much intents for this option.. try again later")
+                                        time.sleep(1)
+                                        intents2_forBAC = 0
+                                        cash_func_running_forBAC = False
+                                        continue
+                                    try:
+                                        if not cash_func_running_forBAC:
+                                            continue
+                                        else:
+                                            alt_response_forBAC = int(input(" ->  "))
+                                    except ValueError:
+                                        intents2_forBAC += 1
+                                        alt_response_forBAC = 0
+                                        print("ValueError Detected - Enter a balance in numbers")
+                                        continue
+                                    finally:
+                                        if 0 < alt_response_forBAC < 999:
+                                            cash_func_running_forBAC = False
+                                        elif 0 >= alt_response_forBAC >= 999:
+                                            intents2_forBAC += 1
+                                            print("Denied! No more than 3 digits balance!")
+                                            continue
+                                    continue
+
+                                taking_out_forBAC = alt_response_forBAC
+                                validation_response_forBAC = cash_option_validation_forbac(taking_out_forBAC,
+                                                                                           warning_forBAC)
+                                if validation_response_forBAC:
+                                    validation_response2_forBAC = 1
+                                else:
+                                    print("Warning! try again")
+                                    mylist_acc_info[val].wrn_counter += 1
+                                    validation_response2_forBAC -= 1
+                                    pass
+
+                                if validation_response2_forBAC == 1:
+                                    taking_out22 = cash_function_forbac(taking_out_forBAC, mylist_acc_info[val].balance)
+                                    mylist_acc_info[val].balance = taking_out22
+                                    print("You take out: " + str(taking_out_forBAC))
+                                    print("Account total balance is: " + str(mylist_acc_info[val].balance))
+                                    intents2_forBAC = 0
+                                    alt_response_forBAC = 0
+                                    time.sleep(1)
+
+                        # 3.0 Feedback option.
+
+                        elif option1_forBAC.lower() == 'feedback':
+                            feedback_menu_options_forbac()
+                            feed_op_forBAC = input(" - ")
+                            print("loading..")
+                            time.sleep(1)
+                            if feed_op_forBAC.isnumeric():
+                                print("Numeric digits detected" + " - Try again!")
+                                pass
+                            else:
+                                feed_op_forBAC.lower()
+                                comment_forBAC.lower()
+                                trash_data_forBAC = feedback_option_forbac(feed_op_forBAC, comment_forBAC)
+                                time.sleep(1)
+
+                        # 4.0 Program shut Down - running = False.
+
+                        elif option1_forBAC.lower() == 'exit':
+                            print("\nPrinting Account status receipt..")
+                            time.sleep(1.5)
+
+                            with open(file_path, "w") as file:
+                                file.write(txt_data)
+                                file.write(str(receipt_data_forBAC))
+                                file.write(txt_dataline2)
+                                file.write(str(total_balance2_forBAC))
+                                file.write(txt_dataline3)
+                                file.write(txt_dataline4)
+                                print(f"Your receipt can be found in'{file_path}'")
+
+                            mylist_acc_info[val].balance += total_balance2_forBAC
+                            mylist_acc_info[val].deposit = money_adds_forBAC
+
+                            print(mylist_acc_info[val].depo_actions)
+                            time.sleep(0.5)
+                            print(" ")
+                            print("Account Status: Offline")
+                            print("Thanks for using our services!")
+
+                            running_forBAC = False
+                        else:
+                            print("\nNot recognized!, try typing your selection as It's show up in the menu.")
+                            time.sleep(1)
+                            continue
+
+        case main_response if main_response.lower() == 'exit':
+            running = False
+
+print("webpage close..")
+time.sleep(1)
